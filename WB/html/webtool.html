@@ -1,248 +1,251 @@
-<html>
-    <head>
-        <meta name="viewport" content="width:device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    </head>
-    <style>
-        
+<html><head>
+    <meta name="viewport" content="width:device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<style>
+    
 *{
-    padding:0;
-    margin:0;
+padding:0;
+margin:0;
 }        
 html{
-    overflow: auto;
+overflow: auto;
 }
 body{ 
-  font-family: "Open Sans", arial;
-  color:#fff;
-  font-weight:300;
-  background: #ee9ca7;  
-  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  
-  background: linear-gradient(to right, #ffdde1, #ee9ca7); 
+font-family: "Open Sans", arial;
+color:#fff;
+font-weight:300;
+background: #ee9ca7;  
+background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  
+background: linear-gradient(to right, #ffdde1, #ee9ca7); 
 
 }
 html,body{
-    height:100%;
+height:100%;
 }
 nav{
-  background:#00bbbb;
-  position:absolute;
-  top:0;
-  bottom:0;
-  height:100%;
-  left:0;
-  width:70px;
-  overflow:hidden;
-  -webkit-transition:width .2s linear;
-  transition:width .2s linear;
+background:#00bbbb;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:70px;
+overflow:hidden;
+-webkit-transition:width .2s linear;
+transition:width .2s linear;
 }
 a {
-  position:relative;
-  text-decoration:none;
-  color:white;
-  font-size: 13px;
-  display:table;
-  width:250px;
-  border-top:1px solid #03A2A2;  
+position:relative;
+text-decoration:none;
+color:white;
+font-size: 13px;
+display:table;
+width:250px;
+border-top:1px solid #03A2A2;  
 }
 .fa {
-  position: relative;
-  width: 70px;
-  height: 36px;
-  text-align: center;
-  top:12px; 
-  font-size:20px;
+position: relative;
+width: 70px;
+height: 36px;
+text-align: center;
+top:12px; 
+font-size:20px;
 }
 nav .nav-text  {
-  position:relative;
-  top:12px;
+position:relative;
+top:12px;
 }
 
 a:hover{
-  color:#fff;
-  background-color:#3863F4; 
+color:#fff;
+background-color:#3863F4; 
 }
 nav:hover{
-  width:250px;
+width:250px;
 }
 .logo{
-  width:70px;
-  font-family: 'Tangerine', serif;
-  text-align:center;
-  transition:all 0.5s ease;
+width:70px;
+font-family: 'Tangerine', serif;
+text-align:center;
+transition:all 0.5s ease;
 }
 .label{
-  height:0px; 
-  float:left;
-  width:70px;
-  transition:all 0.5s ease;
-  font-family: 'Tangerine', serif;
-  opacity:0;
+height:0px; 
+float:left;
+width:70px;
+transition:all 0.5s ease;
+font-family: 'Tangerine', serif;
+opacity:0;
 }
 nav:hover> .logo{
-  width:250px;
+width:250px;
 }
 nav:hover> .logo > h2{
-  text-indent: -999px
+text-indent: -999px
 }
 nav:hover> .logo > h2:before{
-  text-indent: 0px;
-  content:'Personal Page';
-  float:left;
-  position:relative;
-  left:60px;
+text-indent: 0px;
+content:'Personal Page';
+float:left;
+position:relative;
+left:60px;
 }
 nav:hover> .label{
-  height:50px;
-  width:250px;
-  opacity:1;
-  color:black;
-  text-align:center;
+height:50px;
+width:250px;
+opacity:1;
+color:black;
+text-align:center;
 }
 .mid-block
 {
-  background-color:#076868;
-  text-transform:capitalize;
-  box-shadow:inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55), inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);;
+background-color:#076868;
+text-transform:capitalize;
+box-shadow:inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55), inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);;
 }
 .scrollbar
 {
-  height: 90%;
-  width: 100%;
-  overflow-y: hidden;
-  overflow-x: hidden;
+height: 90%;
+width: 100%;
+overflow-y: hidden;
+overflow-x: hidden;
 }
 
 #style-1::-webkit-scrollbar-track
 {
-  border-radius: 2px;
+border-radius: 2px;
 }
 
 #style-1::-webkit-scrollbar
 {
-  width: 5px;
-  background-color: #F7F7F7;
+width: 5px;
+background-color: #F7F7F7;
 }
 
 #style-1::-webkit-scrollbar-thumb
 {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  background-color: #BFBFBF;
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+background-color: #BFBFBF;
 }
 .scrollbar:hover{
-  height: 90%;
-  width: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+height: 90%;
+width: 100%;
+overflow-y: scroll;
+overflow-x: hidden;
 }
 section{
-  
-  width: 79%;
-  padding-left: 450px;  
-  padding-top: 10px;
-  padding-bottom: 10px;
-  min-height: 20px;
-  float: left;
+
+width: 79%;
+padding-left: 450px;  
+padding-top: 10px;
+padding-bottom: 10px;
+min-height: 20px;
+float: left;
 }
 header{
- 
-  width: 79%;
-  float: center;
-  padding-left: 100px;  
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 0px auto;
-  text-align: center;
+
+width: 79%;
+float: center;
+padding-left: 100px;  
+padding-top: 10px;
+padding-bottom: 10px;
+margin: 0px auto;
+text-align: center;
 }
 footer {
- 
-    background-color:#00bbbb;
-    color:#F7F7F7;
-    clear:both;
-    text-align:center;
-    height: 5%;
-    width:100%;
-    font-family:Microsoft YaHei; 	 
+
+background-color:#00bbbb;
+color:#F7F7F7;
+clear:both;
+text-align:center;
+height: 5%;
+width:100%;
+font-family:Microsoft YaHei; 	 
 }
 img{
-    width: 200px;
-    height: 200px;
+width: 200px;
+height: 200px;
 }
-    </style>
-<nav>
-    <a class="logo" href="home.html">
-        <h2 style="color:#4169e1">S<span style="color:#4169e1">K<span><span style="color:#4169e1">Y<span></span></h2>
-  </a>
+</style></head>
+
+<body><nav>
+<a class="logo" href="home.html">
+    <h2 style="color:#4169e1">S<span style="color:#4169e1">K<span><span style="color:#4169e1">Y<span></span></span></span></span></h2>
+</a>
 
 <div class="scrollbar" id="style-1">
-  <a href="home.html">
-    <i class="fa fa-home fa-lg"></i>
-    <span class="nav-text">Home</span>
-  </a>
+<a href="home.html">
+<i class="fa fa-home fa-lg"></i>
+<span class="nav-text">Home</span>
+</a>
 
-  <a href="profile.html">
-    <i class="fa fa-user fa-lg"></i>
-    <span class="nav-text">Profile</span>
-  </a>
-  
-  <a href="email.html">
-      <i class="fa fa-envelope-o fa-lg"></i>
-      <span class="nav-text">E-mail</span>
-  </a>
-  
-  <div class="mid-block">
+<a href="profile.html">
+<i class="fa fa-user fa-lg"></i>
+<span class="nav-text">Profile</span>
+</a>
 
-    <a href="html.html">
-     <i class="fa fa-html5 fa-lg"></i>
-      <span class="nav-text">HTML</span>
-  </a>
-  
-  <a  href="css.html">
-  <i class="fa fa-css3 fa-lg"></i>
-  <span class="nav-text">CSS</span>
-  </a>
+<a href="email.html">
+  <i class="fa fa-envelope-o fa-lg"></i>
+  <span class="nav-text">E-mail</span>
+</a>
 
-  <a  href="webtool.html">
-    <i class="fa fa-flask fa-lg"></i>
-    <span class="nav-text">Web Tools</span>
-  </a>
+<div class="mid-block">
 
-  <a  href="art.html">
-    <i class="fa fa-picture-o fa-lg"></i>
-    <span class="nav-text">Art & Design</span>
-  </a>
-  <a  href="game.html">
-    <i class="fa fa-gamepad fa-lg"></i>
-    <span class="nav-text">Games</span>
-  </a>
-   
-  </div>
-   <a href="doc.html">
-    <i class="fa fa-book fa-lg"></i>
-    <span class="nav-text">Documentation</span>
-  </a>
+<a href="html.html">
+ <i class="fa fa-html5 fa-lg"></i>
+  <span class="nav-text">HTML</span>
+</a>
+
+<a href="css.html">
+<i class="fa fa-css3 fa-lg"></i>
+<span class="nav-text">CSS</span>
+</a>
+
+<a href="webtool.html">
+<i class="fa fa-flask fa-lg"></i>
+<span class="nav-text">Web Tools</span>
+</a>
+
+<a href="art.html">
+<i class="fa fa-picture-o fa-lg"></i>
+<span class="nav-text">Art &amp; Design</span>
+</a>
+<a href="game.html">
+<i class="fa fa-gamepad fa-lg"></i>
+<span class="nav-text">Games</span>
+</a>
+
+</div>
+<a href="doc.html">
+<i class="fa fa-book fa-lg"></i>
+<span class="nav-text">Documentation</span>
+</a>
 
 
 </div> 
 </nav>
 <header>
-    <h1>toolbox</h1>
+<h1>toolbox</h1>
 </header>
 <section>
 <ul>
-    <li>   
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTbXLpGNlyXM3x4HisJUChBXAIEHn5i6SYFKlC72y13CxJq-F4n&usqp=CAU"><input type="button" value="VSCode"        onclick="location.href= 'https://code.visualstudio.com/'"/ >    
-    </li>
-    <li>   
-        <img src="https://ritwickdey.gallerycdn.vsassets.io/extensions/ritwickdey/liveserver/5.6.1/1555497731217/Microsoft.VisualStudio.Services.Icons.Default"><input type="button" value="LiveServer"    onclick="location.href= 'https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer'"/>    
-    </li>
-    <li>   
-        <img src="https://vscode-icons-team.gallerycdn.vsassets.io/extensions/vscode-icons-team/vscode-icons/10.1.1/1586677542724/Microsoft.VisualStudio.Services.Icons.Default"><input type="button" value="vscode-icons"  onclick="location.href='https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons'"/>    
-    </li>
-    <li>   
-        <img src="https://yuichinukiyama.gallerycdn.vsassets.io/extensions/yuichinukiyama/vscode-preview-server/1.3.0/1565495691482/Microsoft.VisualStudio.Services.Icons.Default"><input type="button" value="Preview on Web Server " onclick="location.href='https://marketplace.visualstudio.com/items?itemName=yuichinukiyama.vscode-preview-server'"/>   
-    </li>
+<li>   
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTbXLpGNlyXM3x4HisJUChBXAIEHn5i6SYFKlC72y13CxJq-F4n&amp;usqp=CAU">
+    <input type="button" value="VSCode" onclick="location.href= 'https://code.visualstudio.com/'">    
+</li>
+<li>   
+    <img src="https://ritwickdey.gallerycdn.vsassets.io/extensions/ritwickdey/liveserver/5.6.1/1555497731217/Microsoft.VisualStudio.Services.Icons.Default">
+    <input type="button" value="LiveServer" onclick="location.href= 'https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer'">    
+</li>
+<li>   
+    <img src="https://vscode-icons-team.gallerycdn.vsassets.io/extensions/vscode-icons-team/vscode-icons/10.1.1/1586677542724/Microsoft.VisualStudio.Services.Icons.Default">
+    <input type="button" value="vscode-icons" onclick="location.href='https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons'">    
+</li>
+<li>   
+    <img src="https://yuichinukiyama.gallerycdn.vsassets.io/extensions/yuichinukiyama/vscode-preview-server/1.3.0/1565495691482/Microsoft.VisualStudio.Services.Icons.Default">
+    <input type="button" value="Preview on Web Server " onclick="location.href='https://marketplace.visualstudio.com/items?itemName=yuichinukiyama.vscode-preview-server'">   
+</li>
 </ul>
 </section>
-</html>
+</body></html>
