@@ -1,0 +1,279 @@
+<html>
+    <head>
+        <meta name="viewport" content="width:device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    </head>
+    <style>
+        
+*{
+    padding:0;
+    margin:0;
+}        
+html{
+    overflow: auto;
+}
+body{ 
+  font-family: "Open Sans", arial;
+  color:#fff;
+  font-weight:300;
+  background: #ee9ca7;  
+  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  
+  background: linear-gradient(to right, #ffdde1, #ee9ca7); 
+
+}
+html,body{
+    height:100%;
+}
+nav{
+  background:#00bbbb;
+  position:absolute;
+  top:0;
+  bottom:0;
+  height:121%;
+  left:0;
+  width:70px;
+  overflow:hidden;
+  -webkit-transition:width .2s linear;
+  transition:width .2s linear;
+}
+a {
+  position:relative;
+  text-decoration:none;
+  color:white;
+  font-size: 13px;
+  display:table;
+  width:250px;
+  border-top:1px solid #03A2A2;  
+}
+.fa {
+  position: relative;
+  width: 70px;
+  height: 36px;
+  text-align: center;
+  top:12px; 
+  font-size:20px;
+}
+nav .nav-text  {
+  position:relative;
+  top:12px;
+}
+
+a:hover{
+  color:#fff;
+  background-color:#3863F4; 
+}
+nav:hover{
+  width:250px;
+}
+.logo{
+  width:70px;
+  font-family: 'Tangerine', serif;
+  text-align:center;
+  transition:all 0.5s ease;
+}
+.label{
+  height:0px; 
+  float:left;
+  width:70px;
+  transition:all 0.5s ease;
+  font-family: 'Tangerine', serif;
+  opacity:0;
+}
+nav:hover> .logo{
+  width:250px;
+}
+nav:hover> .logo > h2{
+  text-indent: -999px
+}
+nav:hover> .logo > h2:before{
+  text-indent: 0px;
+  content:'Personal Page';
+  float:left;
+  position:relative;
+  left:60px;
+}
+nav:hover> .label{
+  height:50px;
+  width:250px;
+  opacity:1;
+  color:black;
+  text-align:center;
+}
+.mid-block
+{
+  background-color:#076868;
+  text-transform:capitalize;
+  box-shadow:inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55), inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);;
+}
+.scrollbar
+{
+  height: 90%;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#style-1::-webkit-scrollbar-track
+{
+  border-radius: 2px;
+}
+
+#style-1::-webkit-scrollbar
+{
+  width: 5px;
+  background-color: #F7F7F7;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #BFBFBF;
+}
+.scrollbar:hover{
+  height: 90%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+section{
+  width: 350px;
+  min-height: 100%;
+  float: left;
+  padding: 100px;  
+}
+footer {
+    background-color:#00bbbb;
+    color:#F7F7F7;
+    clear:both;
+    text-align:center;
+    padding:5px;
+    font-family:Microsoft YaHei; 	 
+}
+    </style>
+<nav>
+    <a class="logo" href="home.html">
+        <h2 style="color:#ffa07a">S<span style="color:#ffa07a">K<span><span style="color:#ffa07a">Y<span></span></h2>
+  </a> 
+
+<div class="scrollbar" id="style-1">
+  <a href="home.html">
+    <i class="fa fa-home fa-lg"></i>
+    <span class="nav-text">Home</span>
+  </a>
+
+  <a href="profile.html">
+    <i class="fa fa-user fa-lg"></i>
+    <span class="nav-text">Profile</span>
+  </a>
+  
+  <a href="email.html">
+      <i class="fa fa-envelope-o fa-lg"></i>
+      <span class="nav-text">E-mail</span>
+  </a>
+  
+  <div class="mid-block">
+
+    <a href="html.html">
+     <i class="fa fa-html5 fa-lg"></i>
+      <span class="nav-text">HTML</span>
+  </a>
+  
+  <a  href="css.html">
+  <i class="fa fa-css3 fa-lg"></i>
+  <span class="nav-text">CSS</span>
+  </a>
+
+  <a  href="webtool.html">
+    <i class="fa fa-flask fa-lg"></i>
+    <span class="nav-text">Web Tools</span>
+  </a>
+
+  <a  href="art.html">
+    <i class="fa fa-picture-o fa-lg"></i>
+    <span class="nav-text">Art & Design</span>
+  </a>
+  <a  href="game.html">
+    <i class="fa fa-gamepad fa-lg"></i>
+    <span class="nav-text">Games</span>
+  </a>
+   
+  </div>
+   <a href="doc.html">
+    <i class="fa fa-book fa-lg"></i>
+    <span class="nav-text">Documentation</span>
+  </a>
+
+
+</div> 
+</nav>
+<section>
+<textarea rows="50" cols="150">
+ <html> 
+    <nav>
+    <a class="logo" href="home.html">
+    <h2 style="color:red">S<span style="color:blue">K<span></h2>
+  </a> 
+
+<div class="scrollbar" id="style-1">
+  <a href="home.html">
+    <i class="fa fa-home fa-lg"></i>
+    <span class="nav-text">Home</span>
+  </a>
+
+  <a href="profile.html">
+    <i class="fa fa-user fa-lg"></i>
+    <span class="nav-text">Profile</span>
+  </a>
+  
+  <a href="email.html">
+      <i class="fa fa-envelope-o fa-lg"></i>
+      <span class="nav-text">E-mail</span>
+  </a>
+  
+  <div class="mid-block">
+
+    <a href="html.html">
+     <i class="fa fa-html5 fa-lg"></i>
+      <span class="nav-text">HTML</span>
+  </a>
+  
+  <a  href="css.html">
+  <i class="fa fa-css3 fa-lg"></i>
+  <span class="nav-text">CSS</span>
+  </a>
+
+  <a  href="webtool.html">
+    <i class="fa fa-flask fa-lg"></i>
+    <span class="nav-text">Web Tools</span>
+  </a>
+
+  <a  href="art.html">
+    <i class="fa fa-picture-o fa-lg"></i>
+    <span class="nav-text">Art & Design</span>
+  </a>
+  <a  href="game.html">
+    <i class="fa fa-gamepad fa-lg"></i>
+    <span class="nav-text">Games</span>
+  </a>
+   
+  </div>
+   <a href="doc.html">
+    <i class="fa fa-book fa-lg"></i>
+    <span class="nav-text">Documentation</span>
+  </a>
+
+
+</div> 
+</nav>
+
+<footer>
+    <p>#</p>
+</footer>
+</html>
+</textarea>
+</section>
+<footer>
+    <p>這是我的html程式碼</p>
+</footer>
+</html>
